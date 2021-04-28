@@ -1,0 +1,31 @@
+B
+
+    <ىK^	  م               @   s>   d dl Z d dlZd dlmZ e j d، d	dd„Zdd„ ZdS )
+é    N)عpyplotz..©é
+   r   c             C   s  | j dkr| j\}}n&| j dkr4| j}d}| d } ntdƒ‚|pRtt t |،،ƒ}|| }tt t |،،ƒ}tt 	|| ،ƒ}t
+j|||dچ\}}	|jdddچ |dkr²|	gn|	 
+، }	xFt|	ƒD ]:\}
+}|j| |
+ j||dd	چd
+ddddgdچ | d
+، qؤW dS )z6
+    Displays 2D data stored in X in a nice grid.
+    é   é   Nz%Input X should be 1 or 2 dimensional.)عfigsizegڑ™™™™™™?)عwspaceعhspaceعF)عorderعGreysr   )عcmapعextentعoff)عndimعshapeعsizeع
+IndexErrorعintعnpعroundعsqrtعfloorعceilr   عsubplotsعsubplots_adjustعravelع	enumerateعimshowعreshapeعaxis)عXZ
+example_widthr   عmعnZexample_heightZdisplay_rowsZdisplay_colsعfigZax_arrayعiعax© r'   ْMC:\Users\DELL\Desktop\GUC10\Machine Learning\Assignments\Assignment3\utils.pyعdisplayData   s$    
+
+
+r)   c             C   s   ddt  |  ،  S )z$
+    Computes the sigmoid of z.
+    g      ً?c             S   s   ddddg}t ƒ  d|، d S )NzRegularized Logistic RegressionzOne-vs-All Classifier Trainingz One-vs-All Classifier Predictionz"Neural Network Prediction Functionz.multi-class-classification-and-neural-networks)عsuperع__init__)عselfZ
+part_namesr'   r'   r(   r+   /   s
+    zsigmoid.<locals>.__init__c          	   s   sâ   xـt ddƒD ]خ}yھ| j| }|dkrR|t dddg،| j| jdƒ}t |، ، }n\|dkrn|| j| j	ddƒ}n@|d	krٹ|| j
+| jƒd }n$|dkrھ|| j
+| j| jƒd }nt‚||fV  W q tk
+rط   |d
+fV  Y qX qW d S )Nr   é   g      ذ?g      à?g      à؟gڑ™™™™™¹?r   é   é   r   )
+عrangeع	functionsr   عarrayr!   عyعhstackعtolistZXmعymعt1عt2عKeyError)r,   Zpart_idعfuncعresr'   r'   r(   ع__iter__7   s     
+zsigmoid.<locals>.__iter__)r   عexp)عzr+   r<   r'   r'   r(   عsigmoid'   s     r?   )Nr   )	عsysعnumpyr   ع
+matplotlibr   عpathعappendr)   r?   r'   r'   r'   r(   ع<module>   s
+   
+ 
